@@ -713,6 +713,7 @@ DODS_INC
 OCI_INCLUDE
 HAVE_OCI
 ODBC_SETTING
+ODBC_LIBS
 LIBKML_INCLUDE
 HAVE_LIBKML
 LIBKML_LDFLAGS
@@ -2915,7 +2916,7 @@ $as_echo "$as_me: loading site script $ac_site_file" >&6;}
       || { { $as_echo "$as_me:${as_lineno-$LINENO}: error: in \`$ac_pwd':" >&5
 $as_echo "$as_me: error: in \`$ac_pwd':" >&2;}
 as_fn_error $? "failed to load site script $ac_site_file
-See \`config.log' for more details" "$LINENO" 5; }
+See \`config.log' for more details" "$LINENO" 5 ; }
   fi
 done
 
@@ -3046,7 +3047,7 @@ fi
 $as_echo "$ac_cv_build" >&6; }
 case $ac_cv_build in
 *-*-*) ;;
-*) as_fn_error $? "invalid value of canonical build" "$LINENO" 5;;
+*) as_fn_error $? "invalid value of canonical build" "$LINENO" 5 ;;
 esac
 build=$ac_cv_build
 ac_save_IFS=$IFS; IFS='-'
@@ -3079,7 +3080,7 @@ fi
 $as_echo "$ac_cv_host" >&6; }
 case $ac_cv_host in
 *-*-*) ;;
-*) as_fn_error $? "invalid value of canonical host" "$LINENO" 5;;
+*) as_fn_error $? "invalid value of canonical host" "$LINENO" 5 ;;
 esac
 host=$ac_cv_host
 ac_save_IFS=$IFS; IFS='-'
@@ -3397,7 +3398,7 @@ fi
 test -z "$CC" && { { $as_echo "$as_me:${as_lineno-$LINENO}: error: in \`$ac_pwd':" >&5
 $as_echo "$as_me: error: in \`$ac_pwd':" >&2;}
 as_fn_error $? "no acceptable C compiler found in \$PATH
-See \`config.log' for more details" "$LINENO" 5; }
+See \`config.log' for more details" "$LINENO" 5 ; }
 
 # Provide some information about the compiler.
 $as_echo "$as_me:${as_lineno-$LINENO}: checking for C compiler version" >&5
@@ -3512,7 +3513,7 @@ sed 's/^/| /' conftest.$ac_ext >&5
 { { $as_echo "$as_me:${as_lineno-$LINENO}: error: in \`$ac_pwd':" >&5
 $as_echo "$as_me: error: in \`$ac_pwd':" >&2;}
 as_fn_error 77 "C compiler cannot create executables
-See \`config.log' for more details" "$LINENO" 5; }
+See \`config.log' for more details" "$LINENO" 5 ; }
 else
   { $as_echo "$as_me:${as_lineno-$LINENO}: result: yes" >&5
 $as_echo "yes" >&6; }
@@ -3555,7 +3556,7 @@ else
   { { $as_echo "$as_me:${as_lineno-$LINENO}: error: in \`$ac_pwd':" >&5
 $as_echo "$as_me: error: in \`$ac_pwd':" >&2;}
 as_fn_error $? "cannot compute suffix of executables: cannot compile and link
-See \`config.log' for more details" "$LINENO" 5; }
+See \`config.log' for more details" "$LINENO" 5 ; }
 fi
 rm -f conftest conftest$ac_cv_exeext
 { $as_echo "$as_me:${as_lineno-$LINENO}: result: $ac_cv_exeext" >&5
@@ -3614,7 +3615,7 @@ $as_echo "$ac_try_echo"; } >&5
 $as_echo "$as_me: error: in \`$ac_pwd':" >&2;}
 as_fn_error $? "cannot run C compiled programs.
 If you meant to cross compile, use \`--host'.
-See \`config.log' for more details" "$LINENO" 5; }
+See \`config.log' for more details" "$LINENO" 5 ; }
     fi
   fi
 fi
@@ -3666,7 +3667,7 @@ sed 's/^/| /' conftest.$ac_ext >&5
 { { $as_echo "$as_me:${as_lineno-$LINENO}: error: in \`$ac_pwd':" >&5
 $as_echo "$as_me: error: in \`$ac_pwd':" >&2;}
 as_fn_error $? "cannot compute suffix of object files: cannot compile
-See \`config.log' for more details" "$LINENO" 5; }
+See \`config.log' for more details" "$LINENO" 5 ; }
 fi
 rm -f conftest.$ac_cv_objext conftest.$ac_ext
 fi
@@ -5343,7 +5344,7 @@ fi
 test -z "$CC" && { { $as_echo "$as_me:${as_lineno-$LINENO}: error: in \`$ac_pwd':" >&5
 $as_echo "$as_me: error: in \`$ac_pwd':" >&2;}
 as_fn_error $? "no acceptable C compiler found in \$PATH
-See \`config.log' for more details" "$LINENO" 5; }
+See \`config.log' for more details" "$LINENO" 5 ; }
 
 # Provide some information about the compiler.
 $as_echo "$as_me:${as_lineno-$LINENO}: checking for C compiler version" >&5
@@ -9498,7 +9499,7 @@ else
   { { $as_echo "$as_me:${as_lineno-$LINENO}: error: in \`$ac_pwd':" >&5
 $as_echo "$as_me: error: in \`$ac_pwd':" >&2;}
 as_fn_error $? "C preprocessor \"$CPP\" fails sanity check
-See \`config.log' for more details" "$LINENO" 5; }
+See \`config.log' for more details" "$LINENO" 5 ; }
 fi
 
 ac_ext=c
@@ -13748,7 +13749,7 @@ else
   { { $as_echo "$as_me:${as_lineno-$LINENO}: error: in \`$ac_pwd':" >&5
 $as_echo "$as_me: error: in \`$ac_pwd':" >&2;}
 as_fn_error $? "C++ preprocessor \"$CXXCPP\" fails sanity check
-See \`config.log' for more details" "$LINENO" 5; }
+See \`config.log' for more details" "$LINENO" 5 ; }
 fi
 
 ac_ext=c
@@ -17617,7 +17618,7 @@ $as_echo "#define AC_APPLE_UNIVERSAL_BUILD 1" >>confdefs.h
      ;; #(
    *)
      as_fn_error $? "unknown endianness
- presetting ac_cv_c_bigendian=no (or yes) will help" "$LINENO" 5 ;;
+ presetting ac_cv_c_bigendian=no (or yes) will help" "$LINENO" 5  ;;
  esac
 
 
@@ -17836,7 +17837,7 @@ else
      { { $as_echo "$as_me:${as_lineno-$LINENO}: error: in \`$ac_pwd':" >&5
 $as_echo "$as_me: error: in \`$ac_pwd':" >&2;}
 as_fn_error 77 "cannot compute sizeof (int)
-See \`config.log' for more details" "$LINENO" 5; }
+See \`config.log' for more details" "$LINENO" 5 ; }
    else
      ac_cv_sizeof_int=0
    fi
@@ -17869,7 +17870,7 @@ else
      { { $as_echo "$as_me:${as_lineno-$LINENO}: error: in \`$ac_pwd':" >&5
 $as_echo "$as_me: error: in \`$ac_pwd':" >&2;}
 as_fn_error 77 "cannot compute sizeof (unsigned long)
-See \`config.log' for more details" "$LINENO" 5; }
+See \`config.log' for more details" "$LINENO" 5 ; }
    else
      ac_cv_sizeof_unsigned_long=0
    fi
@@ -17902,7 +17903,7 @@ else
      { { $as_echo "$as_me:${as_lineno-$LINENO}: error: in \`$ac_pwd':" >&5
 $as_echo "$as_me: error: in \`$ac_pwd':" >&2;}
 as_fn_error 77 "cannot compute sizeof (void*)
-See \`config.log' for more details" "$LINENO" 5; }
+See \`config.log' for more details" "$LINENO" 5 ; }
    else
      ac_cv_sizeof_voidp=0
    fi
@@ -26141,6 +26142,7 @@ if test "${with_odbc+set}" = set; then :
 fi
 
 
+
 if test "$with_odbc" = "no" ; then
 
   ODBC_SETTING=no
@@ -26148,8 +26150,9 @@ if test "$with_odbc" = "no" ; then
   echo "ODBC support disabled."
 
 elif test "$with_odbc" = "yes" -o "$with_odbc" = "" ; then
-
-  { $as_echo "$as_me:${as_lineno-$LINENO}: checking for SQLConnect in -lodbc" >&5
+	ODBC_SETTING=no
+	echo "check for unixODBC"
+	{ $as_echo "$as_me:${as_lineno-$LINENO}: checking for SQLConnect in -lodbc" >&5
 $as_echo_n "checking for SQLConnect in -lodbc... " >&6; }
 if ${ac_cv_lib_odbc_SQLConnect+:} false; then :
   $as_echo_n "(cached) " >&6
@@ -26186,12 +26189,10 @@ fi
 { $as_echo "$as_me:${as_lineno-$LINENO}: result: $ac_cv_lib_odbc_SQLConnect" >&5
 $as_echo "$ac_cv_lib_odbc_SQLConnect" >&6; }
 if test "x$ac_cv_lib_odbc_SQLConnect" = xyes; then :
-  ODBC_SETTING=yes
-else
-  ODBC_SETTING=no
+  ODBC_LIBS="-lodbc -lodbcinst"
 fi
 
-  { $as_echo "$as_me:${as_lineno-$LINENO}: checking for SQLInstallDriverEx in -lodbcinst" >&5
+	{ $as_echo "$as_me:${as_lineno-$LINENO}: checking for SQLInstallDriverEx in -lodbcinst" >&5
 $as_echo_n "checking for SQLInstallDriverEx in -lodbcinst... " >&6; }
 if ${ac_cv_lib_odbcinst_SQLInstallDriverEx+:} false; then :
   $as_echo_n "(cached) " >&6
@@ -26229,34 +26230,213 @@ fi
 $as_echo "$ac_cv_lib_odbcinst_SQLInstallDriverEx" >&6; }
 if test "x$ac_cv_lib_odbcinst_SQLInstallDriverEx" = xyes; then :
   ODBC_SETTING=yes
-else
-  ODBC_SETTING=no
 fi
+
+
+	echo "check for windows ODBC"
+	{ $as_echo "$as_me:${as_lineno-$LINENO}: checking for SQLConnect in -lodbc32" >&5
+$as_echo_n "checking for SQLConnect in -lodbc32... " >&6; }
+if ${ac_cv_lib_odbc32_SQLConnect+:} false; then :
+  $as_echo_n "(cached) " >&6
+else
+  ac_check_lib_save_LIBS=$LIBS
+LIBS="-lodbc32  $LIBS"
+cat confdefs.h - <<_ACEOF >conftest.$ac_ext
+/* end confdefs.h.  */
+
+/* Override any GCC internal prototype to avoid an error.
+   Use char because int might match the return type of a GCC
+   builtin and then its argument prototype would still apply.  */
+#ifdef __cplusplus
+extern "C"
+#endif
+char SQLConnect ();
+int
+main ()
+{
+return SQLConnect ();
+  ;
+  return 0;
+}
+_ACEOF
+if ac_fn_c_try_link "$LINENO"; then :
+  ac_cv_lib_odbc32_SQLConnect=yes
+else
+  ac_cv_lib_odbc32_SQLConnect=no
+fi
+rm -f core conftest.err conftest.$ac_objext \
+    conftest$ac_exeext conftest.$ac_ext
+LIBS=$ac_check_lib_save_LIBS
+fi
+{ $as_echo "$as_me:${as_lineno-$LINENO}: result: $ac_cv_lib_odbc32_SQLConnect" >&5
+$as_echo "$ac_cv_lib_odbc32_SQLConnect" >&6; }
+if test "x$ac_cv_lib_odbc32_SQLConnect" = xyes; then :
+  ODBC_LIBS="-lodbc32 -lodbccp32"
+fi
+
+	{ $as_echo "$as_me:${as_lineno-$LINENO}: checking for SQLInstallDriverEx in -lodbccp32" >&5
+$as_echo_n "checking for SQLInstallDriverEx in -lodbccp32... " >&6; }
+if ${ac_cv_lib_odbccp32_SQLInstallDriverEx+:} false; then :
+  $as_echo_n "(cached) " >&6
+else
+  ac_check_lib_save_LIBS=$LIBS
+LIBS="-lodbccp32  $LIBS"
+cat confdefs.h - <<_ACEOF >conftest.$ac_ext
+/* end confdefs.h.  */
+
+/* Override any GCC internal prototype to avoid an error.
+   Use char because int might match the return type of a GCC
+   builtin and then its argument prototype would still apply.  */
+#ifdef __cplusplus
+extern "C"
+#endif
+char SQLInstallDriverEx ();
+int
+main ()
+{
+return SQLInstallDriverEx ();
+  ;
+  return 0;
+}
+_ACEOF
+if ac_fn_c_try_link "$LINENO"; then :
+  ac_cv_lib_odbccp32_SQLInstallDriverEx=yes
+else
+  ac_cv_lib_odbccp32_SQLInstallDriverEx=no
+fi
+rm -f core conftest.err conftest.$ac_objext \
+    conftest$ac_exeext conftest.$ac_ext
+LIBS=$ac_check_lib_save_LIBS
+fi
+{ $as_echo "$as_me:${as_lineno-$LINENO}: result: $ac_cv_lib_odbccp32_SQLInstallDriverEx" >&5
+$as_echo "$ac_cv_lib_odbccp32_SQLInstallDriverEx" >&6; }
+if test "x$ac_cv_lib_odbccp32_SQLInstallDriverEx" = xyes; then :
+  ODBC_SETTING=yes
+fi
+
 
 
   if test "$ODBC_SETTING" = "yes" ; then
     if test -f /usr/local/include/sql.h -o -f /usr/include/sql.h ; then
       ODBC_SETTING=yes
     else
-      echo "odbc library found, but sql.h missing, ODBC support disabled."
-      ODBC_SETTING=no
+      echo "odbc library found, but sql.h missing then set to no"
+      for ac_header in sql.h
+do :
+  ac_fn_c_check_header_mongrel "$LINENO" "sql.h" "ac_cv_header_sql_h" "$ac_includes_default"
+if test "x$ac_cv_header_sql_h" = xyes; then :
+  cat >>confdefs.h <<_ACEOF
+#define HAVE_SQL_H 1
+_ACEOF
+
+else
+  ODBC_SETTING=no
+fi
+
+done
+
     fi
   fi
 
   if test "$ODBC_SETTING" = "yes"  ; then
-    LIBS="-lodbc -lodbcinst $LIBS"
+    LIBS="$ODBC_LIBS $LIBS"
   fi
 
 else
 
   ODBC_SETTING=yes
-  LIBS="-L$with_odbc -L$with_odbc/lib -lodbc -lodbcinst $LIBS"
+  CPPFLAG_OLD=$CPPFLAGS
+  CPPFLAGS="$CPPFLAGS -L$with_odbc/include -L$with_odbc/lib"
+  { $as_echo "$as_me:${as_lineno-$LINENO}: checking for SQLConnect in -lodbc" >&5
+$as_echo_n "checking for SQLConnect in -lodbc... " >&6; }
+if ${ac_cv_lib_odbc_SQLConnect+:} false; then :
+  $as_echo_n "(cached) " >&6
+else
+  ac_check_lib_save_LIBS=$LIBS
+LIBS="-lodbc  $LIBS"
+cat confdefs.h - <<_ACEOF >conftest.$ac_ext
+/* end confdefs.h.  */
+
+/* Override any GCC internal prototype to avoid an error.
+   Use char because int might match the return type of a GCC
+   builtin and then its argument prototype would still apply.  */
+#ifdef __cplusplus
+extern "C"
+#endif
+char SQLConnect ();
+int
+main ()
+{
+return SQLConnect ();
+  ;
+  return 0;
+}
+_ACEOF
+if ac_fn_c_try_link "$LINENO"; then :
+  ac_cv_lib_odbc_SQLConnect=yes
+else
+  ac_cv_lib_odbc_SQLConnect=no
+fi
+rm -f core conftest.err conftest.$ac_objext \
+    conftest$ac_exeext conftest.$ac_ext
+LIBS=$ac_check_lib_save_LIBS
+fi
+{ $as_echo "$as_me:${as_lineno-$LINENO}: result: $ac_cv_lib_odbc_SQLConnect" >&5
+$as_echo "$ac_cv_lib_odbc_SQLConnect" >&6; }
+if test "x$ac_cv_lib_odbc_SQLConnect" = xyes; then :
+  ODBC_LIBS="-lodbc -lodbcinst"
+fi
+
+  { $as_echo "$as_me:${as_lineno-$LINENO}: checking for SQLConnect in -lodbc32" >&5
+$as_echo_n "checking for SQLConnect in -lodbc32... " >&6; }
+if ${ac_cv_lib_odbc32_SQLConnect+:} false; then :
+  $as_echo_n "(cached) " >&6
+else
+  ac_check_lib_save_LIBS=$LIBS
+LIBS="-lodbc32  $LIBS"
+cat confdefs.h - <<_ACEOF >conftest.$ac_ext
+/* end confdefs.h.  */
+
+/* Override any GCC internal prototype to avoid an error.
+   Use char because int might match the return type of a GCC
+   builtin and then its argument prototype would still apply.  */
+#ifdef __cplusplus
+extern "C"
+#endif
+char SQLConnect ();
+int
+main ()
+{
+return SQLConnect ();
+  ;
+  return 0;
+}
+_ACEOF
+if ac_fn_c_try_link "$LINENO"; then :
+  ac_cv_lib_odbc32_SQLConnect=yes
+else
+  ac_cv_lib_odbc32_SQLConnect=no
+fi
+rm -f core conftest.err conftest.$ac_objext \
+    conftest$ac_exeext conftest.$ac_ext
+LIBS=$ac_check_lib_save_LIBS
+fi
+{ $as_echo "$as_me:${as_lineno-$LINENO}: result: $ac_cv_lib_odbc32_SQLConnect" >&5
+$as_echo "$ac_cv_lib_odbc32_SQLConnect" >&6; }
+if test "x$ac_cv_lib_odbc32_SQLConnect" = xyes; then :
+  ODBC_LIBS="-lodbc32 -lodbccp32"
+fi
+
+
+  LIBS="-L$with_odbc -L$with_odbc/lib $ODBC_LIBS $LIBS"
   EXTRA_INCLUDES="-I$with_odbc -I$with_odbc/include $EXTRA_INCLUDES"
 
   echo "using odbc library from $with_odbc."
 fi
 
 ODBC_SETTING=$ODBC_SETTING
+
+ODBC_LIBS=$ODBC_LIBS
 
 
 
@@ -32342,7 +32522,7 @@ do
     "libtool") CONFIG_COMMANDS="$CONFIG_COMMANDS libtool" ;;
     "GDALmake.opt") CONFIG_FILES="$CONFIG_FILES GDALmake.opt" ;;
 
-  *) as_fn_error $? "invalid argument: \`$ac_config_target'" "$LINENO" 5;;
+  *) as_fn_error $? "invalid argument: \`$ac_config_target'" "$LINENO" 5 ;;
   esac
 done
 
@@ -32660,7 +32840,7 @@ do
   esac
   case $ac_mode$ac_tag in
   :[FHL]*:*);;
-  :L* | :C*:*) as_fn_error $? "invalid tag \`$ac_tag'" "$LINENO" 5;;
+  :L* | :C*:*) as_fn_error $? "invalid tag \`$ac_tag'" "$LINENO" 5 ;;
   :[FH]-) ac_tag=-:-;;
   :[FH]*) ac_tag=$ac_tag:$ac_tag.in;;
   esac
@@ -32688,7 +32868,7 @@ do
 	   [\\/$]*) false;;
 	   *) test -f "$srcdir/$ac_f" && ac_f="$srcdir/$ac_f";;
 	   esac ||
-	   as_fn_error 1 "cannot find input file: \`$ac_f'" "$LINENO" 5;;
+	   as_fn_error 1 "cannot find input file: \`$ac_f'" "$LINENO" 5 ;;
       esac
       case $ac_f in *\'*) ac_f=`$as_echo "$ac_f" | sed "s/'/'\\\\\\\\''/g"`;; esac
       as_fn_append ac_file_inputs " '$ac_f'"
@@ -32715,7 +32895,7 @@ $as_echo "$as_me: creating $ac_file" >&6;}
 
     case $ac_tag in
     *:-:* | *:-) cat >"$ac_tmp/stdin" \
-      || as_fn_error $? "could not create $ac_file" "$LINENO" 5 ;;
+      || as_fn_error $? "could not create $ac_file" "$LINENO" 5  ;;
     esac
     ;;
   esac
@@ -33152,7 +33332,7 @@ shlibpath_overrides_runpath=$shlibpath_overrides_runpath
 libname_spec=$lt_libname_spec
 
 # List of archive names.  First name is the real one, the rest are links.
-# The last name is the one that the linker finds with -lNAME
+# The last name is the one that the linker finds with -lNAME.
 library_names_spec=$lt_library_names_spec
 
 # The coded name of the library, if different from the real name.
@@ -33268,7 +33448,7 @@ allow_undefined_flag=$lt_allow_undefined_flag
 no_undefined_flag=$lt_no_undefined_flag
 
 # Flag to hardcode \$libdir into a binary during linking.
-# This must work even if \$libdir does not exist
+# This must work even if \$libdir does not exist.
 hardcode_libdir_flag_spec=$lt_hardcode_libdir_flag_spec
 
 # If ld is used when linking, flag to hardcode \$libdir into a binary
@@ -33379,9 +33559,9 @@ ltmain="$ac_aux_dir/ltmain.sh"
   sed -e '/^func_dirname ()$/,/^} # func_dirname /c\
 func_dirname ()\
 {\
-\    case ${1} in\
-\      */*) func_dirname_result="${1%/*}${2}" ;;\
-\      *  ) func_dirname_result="${3}" ;;\
+\    case ${1} in\
+\      */*) func_dirname_result="${1%/*}${2}" ;;\
+\      *  ) func_dirname_result="${3}" ;;\
 \    esac\
 } # Extended-shell func_dirname implementation' "$cfgfile" > $cfgfile.tmp \
   && mv -f "$cfgfile.tmp" "$cfgfile" \
@@ -33402,10 +33582,10 @@ test 0 -eq $? || _lt_function_replace_fail=:
   sed -e '/^func_dirname_and_basename ()$/,/^} # func_dirname_and_basename /c\
 func_dirname_and_basename ()\
 {\
-\    case ${1} in\
-\      */*) func_dirname_result="${1%/*}${2}" ;;\
-\      *  ) func_dirname_result="${3}" ;;\
-\    esac\
+\    case ${1} in\
+\      */*) func_dirname_result="${1%/*}${2}" ;;\
+\      *  ) func_dirname_result="${3}" ;;\
+\    esac\
 \    func_basename_result="${1##*/}"\
 } # Extended-shell func_dirname_and_basename implementation' "$cfgfile" > $cfgfile.tmp \
   && mv -f "$cfgfile.tmp" "$cfgfile" \
@@ -33416,10 +33596,10 @@ test 0 -eq $? || _lt_function_replace_fail=:
   sed -e '/^func_stripname ()$/,/^} # func_stripname /c\
 func_stripname ()\
 {\
-\    # pdksh 5.2.14 does not do ${X%$Y} correctly if both X and Y are\
-\    # positional parameters, so assign one to ordinary parameter first.\
-\    func_stripname_result=${3}\
-\    func_stripname_result=${func_stripname_result#"${1}"}\
+\    # pdksh 5.2.14 does not do ${X%$Y} correctly if both X and Y are\
+\    # positional parameters, so assign one to ordinary parameter first.\
+\    func_stripname_result=${3}\
+\    func_stripname_result=${func_stripname_result#"${1}"}\
 \    func_stripname_result=${func_stripname_result%"${2}"}\
 } # Extended-shell func_stripname implementation' "$cfgfile" > $cfgfile.tmp \
   && mv -f "$cfgfile.tmp" "$cfgfile" \
@@ -33430,7 +33610,7 @@ test 0 -eq $? || _lt_function_replace_fail=:
   sed -e '/^func_split_long_opt ()$/,/^} # func_split_long_opt /c\
 func_split_long_opt ()\
 {\
-\    func_split_long_opt_name=${1%%=*}\
+\    func_split_long_opt_name=${1%%=*}\
 \    func_split_long_opt_arg=${1#*=}\
 } # Extended-shell func_split_long_opt implementation' "$cfgfile" > $cfgfile.tmp \
   && mv -f "$cfgfile.tmp" "$cfgfile" \
@@ -33441,7 +33621,7 @@ test 0 -eq $? || _lt_function_replace_fail=:
   sed -e '/^func_split_short_opt ()$/,/^} # func_split_short_opt /c\
 func_split_short_opt ()\
 {\
-\    func_split_short_opt_arg=${1#??}\
+\    func_split_short_opt_arg=${1#??}\
 \    func_split_short_opt_name=${1%"$func_split_short_opt_arg"}\
 } # Extended-shell func_split_short_opt implementation' "$cfgfile" > $cfgfile.tmp \
   && mv -f "$cfgfile.tmp" "$cfgfile" \
@@ -33452,9 +33632,9 @@ test 0 -eq $? || _lt_function_replace_fail=:
   sed -e '/^func_lo2o ()$/,/^} # func_lo2o /c\
 func_lo2o ()\
 {\
-\    case ${1} in\
-\      *.lo) func_lo2o_result=${1%.lo}.${objext} ;;\
-\      *)    func_lo2o_result=${1} ;;\
+\    case ${1} in\
+\      *.lo) func_lo2o_result=${1%.lo}.${objext} ;;\
+\      *)    func_lo2o_result=${1} ;;\
 \    esac\
 } # Extended-shell func_lo2o implementation' "$cfgfile" > $cfgfile.tmp \
   && mv -f "$cfgfile.tmp" "$cfgfile" \
@@ -33507,7 +33687,7 @@ test 0 -eq $? || _lt_function_replace_fail=:
   sed -e '/^func_append_quoted ()$/,/^} # func_append_quoted /c\
 func_append_quoted ()\
 {\
-\    func_quote_for_eval "${2}"\
+\    func_quote_for_eval "${2}"\
 \    eval "${1}+=\\\\ \\$func_quote_for_eval_result"\
 } # Extended-shell func_append_quoted implementation' "$cfgfile" > $cfgfile.tmp \
   && mv -f "$cfgfile.tmp" "$cfgfile" \
@@ -33614,7 +33794,7 @@ allow_undefined_flag=$lt_allow_undefined_flag_CXX
 no_undefined_flag=$lt_no_undefined_flag_CXX
 
 # Flag to hardcode \$libdir into a binary during linking.
-# This must work even if \$libdir does not exist
+# This must work even if \$libdir does not exist.
 hardcode_libdir_flag_spec=$lt_hardcode_libdir_flag_spec_CXX
 
 # If ld is used when linking, flag to hardcode \$libdir into a binary
