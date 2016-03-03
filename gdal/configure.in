@@ -2991,7 +2991,7 @@ elif test "$with_odbc" = "yes" -o "$with_odbc" = "" ; then
 	AC_CHECK_LIB(odbcinst,SQLInstallDriverEx,ODBC_SETTING=yes)
 	
 	echo "check for windows ODBC"
-	AC_CHECK_LIB(odbc32,SQLConnect,[ODBC_LIBS="-lodbc32 -lodbccp32"])
+	AC_CHECK_LIB(odbc32,main,[ODBC_LIBS="-lodbc32 -lodbccp32"])
 	AC_CHECK_LIB(odbccp32,SQLInstallDriverEx,ODBC_SETTING=yes)
   
  
@@ -3011,11 +3011,11 @@ elif test "$with_odbc" = "yes" -o "$with_odbc" = "" ; then
 else
 
   ODBC_SETTING=yes
-  CPPFLAG_OLD=$CPPFLAGS
+  CPPFLAGS_OLD=$CPPFLAGS
   CPPFLAGS="$CPPFLAGS -L$with_odbc/include -L$with_odbc/lib"
   AC_CHECK_LIB(odbc,SQLConnect,ODBC_LIBS="-lodbc -lodbcinst")
-  AC_CHECK_LIB(odbc32,SQLConnect,ODBC_LIBS="-lodbc32 -lodbccp32")
-
+  AC_CHECK_LIB(odbc32,main,ODBC_LIBS="-lodbc32 -lodbccp32")
+  CPPFLAGS=$CPPFLAGS_OLD
   LIBS="-L$with_odbc -L$with_odbc/lib $ODBC_LIBS $LIBS"
   EXTRA_INCLUDES="-I$with_odbc -I$with_odbc/include $EXTRA_INCLUDES"
 

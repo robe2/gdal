@@ -26234,9 +26234,9 @@ fi
 
 
 	echo "check for windows ODBC"
-	{ $as_echo "$as_me:${as_lineno-$LINENO}: checking for SQLConnect in -lodbc32" >&5
-$as_echo_n "checking for SQLConnect in -lodbc32... " >&6; }
-if ${ac_cv_lib_odbc32_SQLConnect+:} false; then :
+	{ $as_echo "$as_me:${as_lineno-$LINENO}: checking for main in -lodbc32" >&5
+$as_echo_n "checking for main in -lodbc32... " >&6; }
+if ${ac_cv_lib_odbc32_main+:} false; then :
   $as_echo_n "(cached) " >&6
 else
   ac_check_lib_save_LIBS=$LIBS
@@ -26244,33 +26244,27 @@ LIBS="-lodbc32  $LIBS"
 cat confdefs.h - <<_ACEOF >conftest.$ac_ext
 /* end confdefs.h.  */
 
-/* Override any GCC internal prototype to avoid an error.
-   Use char because int might match the return type of a GCC
-   builtin and then its argument prototype would still apply.  */
-#ifdef __cplusplus
-extern "C"
-#endif
-char SQLConnect ();
+
 int
 main ()
 {
-return SQLConnect ();
+return main ();
   ;
   return 0;
 }
 _ACEOF
 if ac_fn_c_try_link "$LINENO"; then :
-  ac_cv_lib_odbc32_SQLConnect=yes
+  ac_cv_lib_odbc32_main=yes
 else
-  ac_cv_lib_odbc32_SQLConnect=no
+  ac_cv_lib_odbc32_main=no
 fi
 rm -f core conftest.err conftest.$ac_objext \
     conftest$ac_exeext conftest.$ac_ext
 LIBS=$ac_check_lib_save_LIBS
 fi
-{ $as_echo "$as_me:${as_lineno-$LINENO}: result: $ac_cv_lib_odbc32_SQLConnect" >&5
-$as_echo "$ac_cv_lib_odbc32_SQLConnect" >&6; }
-if test "x$ac_cv_lib_odbc32_SQLConnect" = xyes; then :
+{ $as_echo "$as_me:${as_lineno-$LINENO}: result: $ac_cv_lib_odbc32_main" >&5
+$as_echo "$ac_cv_lib_odbc32_main" >&6; }
+if test "x$ac_cv_lib_odbc32_main" = xyes; then :
   ODBC_LIBS="-lodbc32 -lodbccp32"
 fi
 
@@ -26345,7 +26339,7 @@ done
 else
 
   ODBC_SETTING=yes
-  CPPFLAG_OLD=$CPPFLAGS
+  CPPFLAGS_OLD=$CPPFLAGS
   CPPFLAGS="$CPPFLAGS -L$with_odbc/include -L$with_odbc/lib"
   { $as_echo "$as_me:${as_lineno-$LINENO}: checking for SQLConnect in -lodbc" >&5
 $as_echo_n "checking for SQLConnect in -lodbc... " >&6; }
@@ -26387,9 +26381,9 @@ if test "x$ac_cv_lib_odbc_SQLConnect" = xyes; then :
   ODBC_LIBS="-lodbc -lodbcinst"
 fi
 
-  { $as_echo "$as_me:${as_lineno-$LINENO}: checking for SQLConnect in -lodbc32" >&5
-$as_echo_n "checking for SQLConnect in -lodbc32... " >&6; }
-if ${ac_cv_lib_odbc32_SQLConnect+:} false; then :
+  { $as_echo "$as_me:${as_lineno-$LINENO}: checking for main in -lodbc32" >&5
+$as_echo_n "checking for main in -lodbc32... " >&6; }
+if ${ac_cv_lib_odbc32_main+:} false; then :
   $as_echo_n "(cached) " >&6
 else
   ac_check_lib_save_LIBS=$LIBS
@@ -26397,37 +26391,31 @@ LIBS="-lodbc32  $LIBS"
 cat confdefs.h - <<_ACEOF >conftest.$ac_ext
 /* end confdefs.h.  */
 
-/* Override any GCC internal prototype to avoid an error.
-   Use char because int might match the return type of a GCC
-   builtin and then its argument prototype would still apply.  */
-#ifdef __cplusplus
-extern "C"
-#endif
-char SQLConnect ();
+
 int
 main ()
 {
-return SQLConnect ();
+return main ();
   ;
   return 0;
 }
 _ACEOF
 if ac_fn_c_try_link "$LINENO"; then :
-  ac_cv_lib_odbc32_SQLConnect=yes
+  ac_cv_lib_odbc32_main=yes
 else
-  ac_cv_lib_odbc32_SQLConnect=no
+  ac_cv_lib_odbc32_main=no
 fi
 rm -f core conftest.err conftest.$ac_objext \
     conftest$ac_exeext conftest.$ac_ext
 LIBS=$ac_check_lib_save_LIBS
 fi
-{ $as_echo "$as_me:${as_lineno-$LINENO}: result: $ac_cv_lib_odbc32_SQLConnect" >&5
-$as_echo "$ac_cv_lib_odbc32_SQLConnect" >&6; }
-if test "x$ac_cv_lib_odbc32_SQLConnect" = xyes; then :
+{ $as_echo "$as_me:${as_lineno-$LINENO}: result: $ac_cv_lib_odbc32_main" >&5
+$as_echo "$ac_cv_lib_odbc32_main" >&6; }
+if test "x$ac_cv_lib_odbc32_main" = xyes; then :
   ODBC_LIBS="-lodbc32 -lodbccp32"
 fi
 
-
+  CPPFLAGS=$CPPFLAGS_OLD
   LIBS="-L$with_odbc -L$with_odbc/lib $ODBC_LIBS $LIBS"
   EXTRA_INCLUDES="-I$with_odbc -I$with_odbc/include $EXTRA_INCLUDES"
 
